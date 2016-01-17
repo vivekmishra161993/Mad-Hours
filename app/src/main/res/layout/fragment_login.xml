@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/iv_logo"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/iv_logo"
+        android:id="@+id/buttonPanel"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:id="@+id/login"
+            android:background="@drawable/button_bg"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Sign up"
+            android:id="@+id/signup"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Username/Mobile Number"
+    android:drawableLeft="@drawable/username"
+    android:drawablePadding="10dp"
+    android:textColorHint="#ffffff"
+    android:textColor="#ffffff"
+    android:singleLine="true"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/edittext_underline"
+    android:padding="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_underline"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Sign IN"
+        android:background="@drawable/rectangle_button"
+        android:textSize="20sp"
+        android:textColor="#249D89"
+        android:id="@+id/btn_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect with "
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb"
+            android:layout_marginStart="20dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:layout_marginStart="20dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gplus"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+</LinearLayout>

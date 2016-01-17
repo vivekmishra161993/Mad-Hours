@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.madhours.FullscreenActivity">
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:id="@+id/iv_logo"
+    android:src="@drawable/logo"
+    android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:layout_below="@+id/iv_logo"
+    android:id="@+id/buttonPanel">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Login"
+        android:id="@+id/login"
+        android:background="#343B55"
+        android:textColor="#249D89"
+        android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Signup"
+        android:id="@+id/signup"
+        android:background="#343B55"
+        android:textColor="#249D89"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonPanel">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"/>
+    </ScrollView>
+</RelativeLayout>
